@@ -1,0 +1,27 @@
+.index .body {
+	background-color:#f8f8f8;
+}
+.Menu{
+		text-align:center;
+		color: yellow;
+		font-size: 18px;
+		font-weight: 400;
+		font-style: italic;
+
+}
+.ul {
+	list-style-type: none;
+
+}
+footer {
+	text-align:center;
+}
+
+.contacts {
+	text-align:center;
+
+}
+.in {
+	color:grey;
+	width: 600px;
+}

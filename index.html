@@ -1,58 +1,36 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="./css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<title><strong>Задание А6.8</strong></title>
-	</head>
-	<body>
-		<div class="container">
-			<div class="progress" style="height: 50px; margin-bottom: 50px;"> 
-			  <div
-			    id="my-progress-bar"
-			    class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
-			    role="progressbar"
-			    style="width: 0%">
-			  </div>
-			</div>
-			<div class="group-buttons">
-			  <button onclick="funcProgress(1)" type="button" class="btn btn-outline-primary">Прогресс +1%</button>
-			  <button onclick="funcProgress(3)" type="button" class="btn btn-outline-success">Прогресс +3%</button>
-			  <button onclick="funcProgress(7)" type="button" class="btn btn-outline-danger">Прогресс +7%</button>
-			</div>
-		</div>
-		
-		<script src="./js/jquery-3.4.1.min.js"></script>
-	    <script src="./js/bootstrap.bundle.min.js"></script>
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>HW_1</title>
+	<title>Hello Web!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<bold><hr  align="left"></bold>
+<body>
 
-	    <script type="text/javascript">
-	    	var totalProgress = 0;
-	    	function funcProgress(pcProgress) {
-	    		totalProgress = totalProgress + pcProgress;
-	    		// console.log(String(totalProgress) + "%")
-	    		console.log(pcProgress)
-	    		if (pcProgress === 1) {$(".progress-bar").css('color', 'blue')};
-	    		if (pcProgress === 3) {$(".progress-bar").css('color', 'lightgreen')};
-	    		if (pcProgress === 7) {$(".progress-bar").css('color', '#903')};
+	<div>
+		<h1>All-in store</h1>
+	<h2 class="title"><i>Welcome to the page!</i></h2>
+		<img src="http://superlautoqrp.com/wp-content/uploads/2014/05/the-road-through-the-forest-1920x200.jpg" height="70px">
 
-	    		if (totalProgress <= 25) {
-	    			$(".progress-bar").prop("class", "progress-bar progress-bar-striped progress-bar-animated")} 
-	    			else {
-	    				if (totalProgress <= 75) {$(".progress-bar").prop("class", "progress-bar bg-success progress-bar-striped progress-bar-animated")}
-	    					else {$(".progress-bar").prop("class", "progress-bar bg-danger progress-bar-striped progress-bar-animated")}
-	    		}
-
-	    		if (totalProgress > 100) {
-	    			totalProgress = 100;
-	    			$("button").prop("disabled", true);
-	    			$(".progress-bar").prop("class", "progress-bar progress-bar-striped bg-danger progress-bar-animated")
-	    		};
-
-	    		$("#my-progress-bar").width(String(totalProgress) + "%");
-	    		$('.progress-bar').text(totalProgress + '%');
-	    	}
-	    </script>
-	</body>
+	</div>
+	<div class="Menu_block">
+	<h1 class="Menu_Name">Меню</h1>
+	<hr width="100px;" align="left" color="red">
+	<ul class="Menu" >
+		<li class="M_1"><a href="index.html" class="index_1">Main</a></li><br>
+		<li class="M_2"><a href="catalogue.html" class="index_2">Catalogue</a></li><br>
+		<li class="M_3"><a href="contacts.html" class="index_3">Contacts</a></li><br>
+	</ul>
+	</div>
+<br><br><br><br><br><br>
+</body>
+<footer id="footer">
+	<blockquote>
+&#169; All rights reserved.
+	</blockquote>
+</div>
+</footer>
+</div>
+</body>
 </html>
